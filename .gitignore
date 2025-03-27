@@ -17,7 +17,7 @@
 *.xdv
 *-converted-to.*
 # these rules might exclude image files for figures etc.
-# *.ps
+*.ps
 # *.eps
 # *.pdf
 
@@ -349,5 +349,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# poster
-*.ps
+### Ignore all PDF outputs
+article.pdf
+slides.pdf
