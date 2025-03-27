@@ -13,8 +13,6 @@ jobs:
       - name: Checkout [${{ github.repository }}]
         uses: actions/checkout@v4
 
-      - uses: cvxgrp/.github/actions/latex@main
+      - uses: haozhu10015/.github/actions/latex@main
         with:
-          # Space-separated list of LaTeX files to compile
           paper: article/article.tex slides/slides.tex
-          create-release: 'true'
