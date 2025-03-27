@@ -1,0 +1,20 @@
+name: Build LaTeX document
+
+on:
+  push
+
+jobs:
+  build_paper:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Allow creating releases
+
+    steps:
+      - name: Checkout [${{ github.repository }}]
+        uses: actions/checkout@v4
+
+      - uses: cvxgrp/.github/actions/latex@main
+        with:
+          # Space-separated list of LaTeX files to compile
+          paper: article/article.tex slides/slides.tex
+          create-release: 'true'
