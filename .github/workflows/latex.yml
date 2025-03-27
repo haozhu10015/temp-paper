@@ -1,4 +1,4 @@
-name: Build LaTeX document
+name: Build LaTeX Document
 
 on:
   push
@@ -6,8 +6,6 @@ on:
 jobs:
   build_paper:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write  # Allow creating releases
 
     steps:
       - name: Checkout [${{ github.repository }}]
@@ -15,4 +13,5 @@ jobs:
 
       - uses: haozhu10015/.github/actions/latex@main
         with:
+          # space-separated list of LaTeX files to compile
           paper: article/article.tex slides/slides.tex
