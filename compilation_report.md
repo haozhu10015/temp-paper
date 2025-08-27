@@ -1,9 +1,9 @@
 # LaTeX Compilation Report
-Generated: Thu Mar 27 12:11:27 UTC 2025
+Generated: Wed Aug 27 15:45:15 UTC 2025
 ## Compiled Documents
 - article.pdf
   - Size: 127K
-  - SHA256: 153a8b75c0e2d975cff66a1243de50d5f124da969381820f5164c24e1b51db91
+  - SHA256: 432e723fc1d336a83b1b3d65f5fcf79d0fbac427fb959106d1507746c0fa934e
 - slides.pdf
-  - Size: 58K
-  - SHA256: 7df38fd6c716908639bb77bfead65015094b41bab1f38032af644b2f7bd46070
+  - Size: 45K
+  - SHA256: 146346d50a4cfebcd1dcfebd5d7c479c1c56ead13c5507f8efba3e3ea60f3b69
