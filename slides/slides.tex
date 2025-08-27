@@ -1,39 +1,34 @@
-\documentclass[usepdftitle=false]{beamer}
+\documentclass[landscape]{foils}
 
-\usepackage{zhslides}
-\input{defs.tex}
+\usepackage{zhfoils}
+\input{defs}
 
-\title{Title}
-\author{Hao Zhu}
-\institute{Department of Computer Science\\University of Freiburg}
+\title{Slide Template}
+\author{
+    Hao Zhu\\[10pt]
+    Department of Computer Science\\
+    University of Freiburg
+}
 \date{\today}
+\info{Slide Template --- Zhu}
 
 \begin{document}
-\begin{frame}[plain]
-    \titlepage{}
-\end{frame}
+\maketitle
 
-\section{First section}
-\begin{frame}
-    \frametitle{Frist section}
-    
-\end{frame}
+\makesection{Some section}
+\vfs
+\begin{itemize}\itemsep=20pt
+    \item some slide
+    \item citation
+\end{itemize}
+\vfs
 
-\section{Second section}
-\begin{frame}
-    \frametitle{Second section}
+\makefoil{Some slide}
+\lipsum[1]
 
-\end{frame}
+\makefoil{Citation}
+(Boyd and Vandenberghe~\cite{boyd2004convex})
 
-\begin{frame}
-    \frametitle{Citation}
-    \framesubtitle{(Boyd and Vandenberghe~\cite{boyd2004convex})}
-
-\end{frame}
-
-\begin{frame}[plain]{Reference}
-    \footnotesize
-    \nocite{*}
-    \bibliography{refs}
-\end{frame}
+% references
+\makereference{refs}
 \end{document}
